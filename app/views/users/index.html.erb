@@ -1,0 +1,14 @@
+<%=@users.each do |u| %>
+	<div>
+		Name:-<%= u.name %></br>
+		User Name:<%= @user.username if @username.present? %></br>
+		Email:<%= u.email%></br>
+		Date_of_birth%= u.date_of_birth %></br>
+		mobile<%= u.mobile %></br>
+		Country:-<%= u.country %></br>
+		<div><%= link_to "show", user_path(u.id) %></div>
+		<div><%= link_to "delete", user_path(u.id),method: :delete %></div>
+	</div>
+<hr></br>
+<%end %>
+<div><%= link_to "create user", new_user_path %></div>

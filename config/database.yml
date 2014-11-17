@@ -1,0 +1,16 @@
+ development:
+   adapter: postgresql
+   encoding: utf-8
+   host: localhost
+   database: development
+   pool: 5
+   username: rails
+   password: rails
+
+ production:
+  adapter: postgresql
+  encoding: utf8
+  database: production
+  username: rails
+  password: rails
+

@@ -1,0 +1,11 @@
+<h5>users profile</h5>
+</hr>
+<%= @user.name %></br>
+<%= @user.username %></br>
+<%= @user.email%></br>
+<%= @user.date_of_birth %></br>
+<%= @user.mobile %></br>
+<%= @user.country %></br>
+<div><%= link_to "edit user", edit_user_path(@user.id) %></div>
+<div><%= link_to "back to create user", new_user_path %></div> 
+<div><%= link_to "shoe all ", users_path %></div>
